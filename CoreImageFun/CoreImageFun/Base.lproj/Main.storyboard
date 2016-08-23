@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreImageFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zgp-eB-vLQ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zgp-eB-vLQ" secondAttribute="height" multiplier="8:5" id="eer-MF-EZs"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wAL-Js-ySG">
+                                <rect key="frame" x="18" y="403" width="564" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="aF0-De-E6P"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aF0-De-E6P"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="amountSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Kbz-lZ-9Nm"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euq-hD-FB6">
+                                <rect key="frame" x="491" y="550" width="89" height="30"/>
+                                <state key="normal" title="Photo Album"/>
+                                <connections>
+                                    <action selector="loadPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UPB-tI-Fex"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L32-TE-lvp">
+                                <rect key="frame" x="20" y="550" width="99" height="30"/>
+                                <state key="normal" title="Save to Album"/>
+                                <connections>
+                                    <action selector="savePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DCD-zr-vcG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L32-TE-lvp" secondAttribute="bottom" constant="20" id="0fI-V6-9d0"/>
+                            <constraint firstItem="Zgp-eB-vLQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AHh-2e-02i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Euq-hD-FB6" secondAttribute="trailing" id="BgC-gD-H4D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wAL-Js-ySG" secondAttribute="trailing" id="Dw9-3l-oTc"/>
+                            <constraint firstItem="wAL-Js-ySG" firstAttribute="centerX" secondItem="Zgp-eB-vLQ" secondAttribute="centerX" id="Gnc-Id-MF7"/>
+                            <constraint firstItem="Zgp-eB-vLQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KkI-Di-Def"/>
+                            <constraint firstItem="wAL-Js-ySG" firstAttribute="top" secondItem="Zgp-eB-vLQ" secondAttribute="bottom" constant="8" symbolic="YES" id="PAg-yQ-5wz"/>
+                            <constraint firstItem="wAL-Js-ySG" firstAttribute="top" secondItem="Zgp-eB-vLQ" secondAttribute="bottom" constant="8" id="T1s-77-gka"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="L32-TE-lvp" secondAttribute="leading" id="Wef-Te-nLC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wAL-Js-ySG" secondAttribute="leading" id="YMM-rm-DCn"/>
+                            <constraint firstItem="Zgp-eB-vLQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ZBU-tZ-EXj"/>
+                            <constraint firstItem="wAL-Js-ySG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hsy-Qs-B8b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Euq-hD-FB6" secondAttribute="bottom" constant="20" id="lRd-2C-l6F"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Gnc-Id-MF7"/>
+                                <exclude reference="PAg-yQ-5wz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="amountSlider" destination="wAL-Js-ySG" id="KaY-wk-C1L"/>
+                        <outlet property="imageView" destination="Zgp-eB-vLQ" id="IvE-46-IdV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472" y="429"/>
+        </scene>
+    </scenes>
+</document>
