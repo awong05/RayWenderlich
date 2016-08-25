@@ -19,18 +19,19 @@ class ViewController: UIViewController
     @IBOutlet weak var averageWaterDrunk: UILabel!
     @IBOutlet weak var maxLabel: UILabel!
 
+    @IBOutlet weak var medalView: MedalView!
+
     private var isGraphViewShowing = false
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
         counterLabel.text = "\(counterView.counter)"
+        checkTotal()
     }
 
     func setupGraphDisplay()
     {
-        let noOfDays = 7
-
         graphView.graphPoints[graphView.graphPoints.count - 1] = counterView.counter
         graphView.setNeedsDisplay()
         maxLabel.text = "\(graphView.graphPoints.maxElement()!)"
@@ -61,6 +62,15 @@ class ViewController: UIViewController
         }
     }
 
+    func checkTotal()
+    {
+        if counterView.counter >= 8 {
+            medalView.showMedal(true)
+        } else {
+            medalView.showMedal(false)
+        }
+    }
+
     @IBAction func btnPushButton(button: PushButtonView)
     {
         if button.isAddButton {
@@ -75,6 +85,8 @@ class ViewController: UIViewController
         if isGraphViewShowing {
             counterViewTap(nil)
         }
+
+        checkTotal()
     }
 
     @IBAction func counterViewTap(gesture: UITapGestureRecognizer?)

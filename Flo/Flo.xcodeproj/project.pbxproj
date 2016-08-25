@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF28F5041D6EBD550001064E /* MedalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28F5031D6EBD550001064E /* MedalView.swift */; };
 		AF471CF41D6D22360047DEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF471CF31D6D22360047DEF4 /* AppDelegate.swift */; };
 		AF471CF61D6D22360047DEF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF471CF51D6D22360047DEF4 /* ViewController.swift */; };
 		AF471CF91D6D22360047DEF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF471CF71D6D22360047DEF4 /* Main.storyboard */; };
@@ -15,9 +16,11 @@
 		AF471D061D6D23680047DEF4 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF471D051D6D23680047DEF4 /* PushButtonView.swift */; };
 		AF471D081D6D44450047DEF4 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF471D071D6D44450047DEF4 /* CounterView.swift */; };
 		AFEBBF2B1D6E52CB00FE72FE /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEBBF2A1D6E52CB00FE72FE /* GraphView.swift */; };
+		AFEBBF2D1D6EAF2B00FE72FE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEBBF2C1D6EAF2B00FE72FE /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF28F5031D6EBD550001064E /* MedalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalView.swift; sourceTree = "<group>"; };
 		AF471CF01D6D22360047DEF4 /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF471CF31D6D22360047DEF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF471CF51D6D22360047DEF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		AF471D051D6D23680047DEF4 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
 		AF471D071D6D44450047DEF4 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		AFEBBF2A1D6E52CB00FE72FE /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		AFEBBF2C1D6EAF2B00FE72FE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +66,13 @@
 			children = (
 				AF471CF31D6D22360047DEF4 /* AppDelegate.swift */,
 				AF471CFA1D6D22360047DEF4 /* Assets.xcassets */,
+				AFEBBF2C1D6EAF2B00FE72FE /* BackgroundView.swift */,
 				AF471D071D6D44450047DEF4 /* CounterView.swift */,
 				AFEBBF2A1D6E52CB00FE72FE /* GraphView.swift */,
 				AF471CFF1D6D22360047DEF4 /* Info.plist */,
 				AF471CFC1D6D22360047DEF4 /* LaunchScreen.storyboard */,
 				AF471CF71D6D22360047DEF4 /* Main.storyboard */,
+				AF28F5031D6EBD550001064E /* MedalView.swift */,
 				AF471D051D6D23680047DEF4 /* PushButtonView.swift */,
 				AF471CF51D6D22360047DEF4 /* ViewController.swift */,
 			);
@@ -144,11 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEBBF2D1D6EAF2B00FE72FE /* BackgroundView.swift in Sources */,
 				AFEBBF2B1D6E52CB00FE72FE /* GraphView.swift in Sources */,
 				AF471CF61D6D22360047DEF4 /* ViewController.swift in Sources */,
 				AF471D061D6D23680047DEF4 /* PushButtonView.swift in Sources */,
 				AF471CF41D6D22360047DEF4 /* AppDelegate.swift in Sources */,
 				AF471D081D6D44450047DEF4 /* CounterView.swift in Sources */,
+				AF28F5041D6EBD550001064E /* MedalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
