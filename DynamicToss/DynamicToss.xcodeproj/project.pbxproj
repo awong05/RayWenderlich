@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF3115151D6FD1D200A159F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3115141D6FD1D200A159F0 /* AppDelegate.swift */; };
+		AF3115171D6FD1D200A159F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3115161D6FD1D200A159F0 /* ViewController.swift */; };
+		AF31151A1D6FD1D200A159F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3115181D6FD1D200A159F0 /* Main.storyboard */; };
+		AF31151C1D6FD1D200A159F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF31151B1D6FD1D200A159F0 /* Assets.xcassets */; };
+		AF31151F1D6FD1D200A159F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF31151D1D6FD1D200A159F0 /* LaunchScreen.storyboard */; };
+		AF3115271D6FD25300A159F0 /* goldfish_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF3115261D6FD25300A159F0 /* goldfish_feature.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF3115111D6FD1D200A159F0 /* DynamicToss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicToss.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3115141D6FD1D200A159F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF3115161D6FD1D200A159F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF3115191D6FD1D200A159F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF31151B1D6FD1D200A159F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF31151E1D6FD1D200A159F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF3115201D6FD1D200A159F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF3115261D6FD25300A159F0 /* goldfish_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goldfish_feature.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF31150E1D6FD1D200A159F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF3115081D6FD1D200A159F0 = {
+			isa = PBXGroup;
+			children = (
+				AF3115131D6FD1D200A159F0 /* DynamicToss */,
+				AF3115121D6FD1D200A159F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF3115121D6FD1D200A159F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF3115111D6FD1D200A159F0 /* DynamicToss.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF3115131D6FD1D200A159F0 /* DynamicToss */ = {
+			isa = PBXGroup;
+			children = (
+				AF3115141D6FD1D200A159F0 /* AppDelegate.swift */,
+				AF3115161D6FD1D200A159F0 /* ViewController.swift */,
+				AF3115181D6FD1D200A159F0 /* Main.storyboard */,
+				AF31151B1D6FD1D200A159F0 /* Assets.xcassets */,
+				AF3115261D6FD25300A159F0 /* goldfish_feature.jpg */,
+				AF31151D1D6FD1D200A159F0 /* LaunchScreen.storyboard */,
+				AF3115201D6FD1D200A159F0 /* Info.plist */,
+			);
+			path = DynamicToss;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF3115101D6FD1D200A159F0 /* DynamicToss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF3115231D6FD1D200A159F0 /* Build configuration list for PBXNativeTarget "DynamicToss" */;
+			buildPhases = (
+				AF31150D1D6FD1D200A159F0 /* Sources */,
+				AF31150E1D6FD1D200A159F0 /* Frameworks */,
+				AF31150F1D6FD1D200A159F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicToss;
+			productName = DynamicToss;
+			productReference = AF3115111D6FD1D200A159F0 /* DynamicToss.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF3115091D6FD1D200A159F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Andy Wong";
+				TargetAttributes = {
+					AF3115101D6FD1D200A159F0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AF31150C1D6FD1D200A159F0 /* Build configuration list for PBXProject "DynamicToss" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF3115081D6FD1D200A159F0;
+			productRefGroup = AF3115121D6FD1D200A159F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF3115101D6FD1D200A159F0 /* DynamicToss */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF31150F1D6FD1D200A159F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF31151F1D6FD1D200A159F0 /* LaunchScreen.storyboard in Resources */,
+				AF31151C1D6FD1D200A159F0 /* Assets.xcassets in Resources */,
+				AF3115271D6FD25300A159F0 /* goldfish_feature.jpg in Resources */,
+				AF31151A1D6FD1D200A159F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF31150D1D6FD1D200A159F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3115171D6FD1D200A159F0 /* ViewController.swift in Sources */,
+				AF3115151D6FD1D200A159F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF3115181D6FD1D200A159F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF3115191D6FD1D200A159F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF31151D1D6FD1D200A159F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF31151E1D6FD1D200A159F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF3115211D6FD1D200A159F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF3115221D6FD1D200A159F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF3115241D6FD1D200A159F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DynamicToss/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.awong.DynamicToss;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF3115251D6FD1D200A159F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DynamicToss/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.awong.DynamicToss;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF31150C1D6FD1D200A159F0 /* Build configuration list for PBXProject "DynamicToss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3115211D6FD1D200A159F0 /* Debug */,
+				AF3115221D6FD1D200A159F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF3115231D6FD1D200A159F0 /* Build configuration list for PBXNativeTarget "DynamicToss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3115241D6FD1D200A159F0 /* Debug */,
+				AF3115251D6FD1D200A159F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF3115091D6FD1D200A159F0 /* Project object */;
+}
