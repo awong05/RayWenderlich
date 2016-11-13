@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Books.plist
+   Paper
+
+   Created by Andy Wong on 11/13/16.
+   Copyright (c) 2016 Ray Wenderlich. All rights reserved.
+-->
+<plist version="1.0">
+<array>
+    <dict>
+        <key>cover</key>
+        <string>Swift-cover</string>
+        <key>pages</key>
+        <array>
+            <string>page-blank</string>
+            <string>page-img</string>
+            <string>page-img</string>
+            <string>page-img</string>
+            <string>page-img</string>
+            <string>page-img</string>
+            <string>page-img</string>
+            <string>page-img</string>
+        </array>
+    </dict>
+    <dict>
+        <key>cover</key>
+        <string>iOS8-cover</string>
+        <key>pages</key>
+        <array>
+            <string>page-blank</string>
+            <string>page-img</string>
+            <string>page-img</string>
+            <string>page-img</string>
+            <string>page-img</string>
+            <string>page-img</string>
+            <string>page-img</string>
+            <string>page-img</string>
+        </array>
+    </dict>
+    <dict>
+        <key>cover</key>
+        <string>CoreData-cover</string>
+        <key>pages</key>
+        <array>
+            <string>page-blank</string>
+            <string>page-img</string>
+            <string>page-img</string>
+            <string>page-img</string>
+        </array>
+    </dict>
+</array>
+</plist>
