@@ -24,7 +24,7 @@ class BookPageCell: UICollectionViewCell {
 
     var image: UIImage? {
         didSet {
-            var corners: UIRectCorner = isRightPage ? [.topRight, .bottomRight] : [.topLeft, .bottomLeft]
+            let corners: UIRectCorner = isRightPage ? [.topRight, .bottomRight] : [.topLeft, .bottomLeft]
             imageView.image = image!.imageByScalingAndCroppingForSize(bounds.size).imageWithRoundedCornersSize(20, corners: corners)
         }
     }
@@ -61,8 +61,7 @@ class BookPageCell: UICollectionViewCell {
     }
 
     func updateShadowLayer(_ animated: Bool = false) {
-        var ratio: CGFloat = 0
-        var inverseRatio = 1 - abs(getRatioFromTransform())
+        let inverseRatio = 1 - abs(getRatioFromTransform())
 
         if !animated {
             CATransaction.begin()
@@ -74,29 +73,43 @@ class BookPageCell: UICollectionViewCell {
                 UIColor.darkGray.withAlphaComponent(inverseRatio * 0.45).cgColor,
                 UIColor.darkGray.withAlphaComponent(inverseRatio * 0.40).cgColor,
                 UIColor.darkGray.withAlphaComponent(inverseRatio * 0.55).cgColor
-            ) as! [UIColor]
+            ) as? [Any]
             shadowLayer.locations = NSArray(objects:
                 NSNumber(value: 0.00),
                 NSNumber(value: 0.02),
                 NSNumber(value: 1.00)
-            ) as! [NSNumber]
+            ) as? [NSNumber]
         } else {
             shadowLayer.colors = NSArray(objects:
                 UIColor.darkGray.withAlphaComponent(inverseRatio * 0.30).cgColor,
                 UIColor.darkGray.withAlphaComponent(inverseRatio * 0.40).cgColor,
                 UIColor.darkGray.withAlphaComponent(inverseRatio * 0.50).cgColor,
                 UIColor.darkGray.withAlphaComponent(inverseRatio * 0.55).cgColor
-            ) as! [UIColor]
+            ) as? [Any]
             shadowLayer.locations = NSArray(objects:
                 NSNumber(value: 0.00),
                 NSNumber(value: 0.50),
                 NSNumber(value: 0.98),
                 NSNumber(value: 1.00)
-            ) as! [NSNumber]
+            ) as? [NSNumber]
         }
 
         if !animated {
             CATransaction.commit()
         }
+    }
+
+    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+        super.apply(layoutAttributes)
+
+        if layoutAttributes.indexPath.item % 2 == 0 {
+            layer.anchorPoint = CGPoint(x: 0, y: 0.5)
+            isRightPage = true
+        } else {
+            layer.anchorPoint = CGPoint(x: 1, y: 0.5)
+            isRightPage = false
+        }
+
+        self.updateShadowLayer()
     }
 }

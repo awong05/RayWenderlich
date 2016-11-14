@@ -20,9 +20,9 @@ class BooksViewController: UICollectionViewController {
         books = BookStore.sharedInstance.loadBooks("Books")
     }
 
-    func openBook(_ book: Book?) {
+    func openBook() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "BookViewController") as! BookViewController
-        vc.book = book
+        vc.book = selectedCell()?.book
 
         DispatchQueue.main.async {
             self.navigationController?.pushViewController(vc, animated: true)
@@ -31,8 +31,7 @@ class BooksViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        var book = books?[indexPath.row]
-        openBook(book)
+        openBook()
     }
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -47,10 +46,20 @@ class BooksViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCoverCell", for: indexPath) as! BookCoverCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCoverCell", for: indexPath) as! BookCoverCell
 
         cell.book = books?[indexPath.row]
 
         return cell
+    }
+
+    
+    func selectedCell() -> BookCoverCell? {
+        if let indexPath = collectionView?.indexPathForItem(at: CGPoint(x: collectionView!.contentOffset.x + collectionView!.bounds.width / 2, y: collectionView!.bounds.height / 2)) {
+            if let cell = collectionView?.cellForItem(at: indexPath) as? BookCoverCell {
+                return cell
+            }
+        }
+        return nil
     }
 }
